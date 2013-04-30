@@ -1,0 +1,22 @@
+<h2>New List</h2>
+<%= form_for(@list) do |f| %>
+    <p>
+      <%=	 f.label :name %><br />
+      <%=	 f.text_field :name %>
+    </p>
+
+    <p>
+      <%=	 f.label :category %><br />
+      <%=	 f.text_field :category %>
+    </p>
+
+    <p>
+      <%=	 f.label :status  %>
+      <%=	 f.radio_button @list.status, 'Active', checked: true %>
+      <%=	 f.label 'Active' %>
+      <%=	 f.radio_button @list.status, 'Inactive', checked: false %>
+      <%=	 f.label 'Inactive' %>
+
+    </p>
+
+<%	 end %>
