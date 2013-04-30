@@ -12,5 +12,53 @@
       ]
     },
     "timestamp": 1366339663
+  },
+  "Cucumber Features": {
+    "coverage": {
+      "/Users/uw/rails_class/final_project/shoppinglist/Shoppinglist/app/models/user.rb": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/uw/rails_class/final_project/shoppinglist/Shoppinglist/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/uw/rails_class/final_project/shoppinglist/Shoppinglist/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/uw/rails_class/final_project/shoppinglist/Shoppinglist/app/controllers/users_controller.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1367292285
   }
 }
