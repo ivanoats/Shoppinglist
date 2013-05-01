@@ -10,13 +10,20 @@
       <%=	 f.text_field :category %>
     </p>
 
+
+
     <p>
       <%=	 f.label :status  %>
-      <%=	 f.radio_button @list.status, 'Active', checked: true %>
-      <%=	 f.label 'Active' %>
-      <%=	 f.radio_button @list.status, 'Inactive', checked: false %>
-      <%=	 f.label 'Inactive' %>
+      <%=	 f.radio_button 'status', 'Yes', checked: true, id:'Active'%>Active
+      <%=	 f.radio_button 'status', 'No', checked: false, id: 'Inactive' %>Inactive
 
     </p>
 
+    <p>
+      <%=	 f.label :publicity, "Make Public?" %>
+      <%=	 f.radio_button 'publicity',true, checked: true, id: 'Yes' %>Yes
+      <%=	 f.radio_button 'publicity',false, checked: false, id: 'No' %>No
+
+    </p>
+    <%=	 f.submit %>
 <%	 end %>

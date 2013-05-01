@@ -7,9 +7,9 @@ feature 'Creating Lists' do
     fill_in 'Name', with: 'Test List One'
     fill_in 'Category', with: 'Test Category'
     choose 'Active'
-    choose 'Make Public'
+    choose 'Yes'
     click_button 'Create List'
-    page.should have_content('List has been created')
+    page.should have_content('List has been created!')
   end
 
 end
