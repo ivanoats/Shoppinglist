@@ -23,10 +23,13 @@ end
 gem 'therubyracer'
 gem 'jquery-rails'
 
+group :test do
+  gem 'email_spec', '1.2.1'
+end
 group :test, :development do
   gem 'rspec-rails'
   gem 'capybara'
-  gem 'factory_girl'
+  gem 'factory_girl', '2.6.4'
   gem 'simplecov', :require => false
 
 end

@@ -15,7 +15,7 @@
   },
   "Cucumber Features": {
     "coverage": {
-      "/Users/uw/rails_class/final_project/shoppinglist/Shoppinglist/app/models/user.rb": [
+      "/Users/uw/rails_class/final_project/Shoppinglist/app/models/user.rb": [
         1,
         null,
         null,
@@ -28,20 +28,20 @@
         null,
         null
       ],
-      "/Users/uw/rails_class/final_project/shoppinglist/Shoppinglist/app/controllers/application_controller.rb": [
+      "/Users/uw/rails_class/final_project/Shoppinglist/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/Users/uw/rails_class/final_project/shoppinglist/Shoppinglist/app/helpers/application_helper.rb": [
+      "/Users/uw/rails_class/final_project/Shoppinglist/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/uw/rails_class/final_project/shoppinglist/Shoppinglist/app/controllers/users_controller.rb": [
+      "/Users/uw/rails_class/final_project/Shoppinglist/app/controllers/users_controller.rb": [
         1,
         null,
         1,
-        2,
+        4,
         null,
         null,
         1,
@@ -59,6 +59,6 @@
         null
       ]
     },
-    "timestamp": 1367292285
+    "timestamp": 1367528946
   }
 }
