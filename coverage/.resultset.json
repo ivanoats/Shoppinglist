@@ -26,6 +26,9 @@
         null,
         1,
         null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/uw/rails_class/final_project/Shoppinglist/app/controllers/application_controller.rb": [
@@ -37,11 +40,45 @@
         1,
         null
       ],
+      "/Users/uw/rails_class/final_project/Shoppinglist/app/helpers/lists_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/uw/rails_class/final_project/Shoppinglist/app/controllers/lists_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/uw/rails_class/final_project/Shoppinglist/app/models/list.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/uw/rails_class/final_project/Shoppinglist/app/controllers/users_controller.rb": [
         1,
         null,
         1,
-        4,
+        0,
         null,
         null,
         1,
@@ -59,6 +96,6 @@
         null
       ]
     },
-    "timestamp": 1368065372
+    "timestamp": 1368158004
   }
 }
