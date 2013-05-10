@@ -16,3 +16,6 @@
 
 # ignore IDE files.
 .idea
+
+# ignore coverage
+/coverage
