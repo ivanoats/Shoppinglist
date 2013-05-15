@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130502052933) do
+ActiveRecord::Schema.define(:version => 20130515041102) do
+
+  create_table "items", :force => true do |t|
+    t.string   "name"
+    t.text     "note"
+    t.string   "tag"
+    t.text     "image"
+    t.integer  "list_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "items", ["list_id"], :name => "index_items_on_list_id"
 
   create_table "lists", :force => true do |t|
     t.string   "name"
@@ -20,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20130502052933) do
     t.boolean  "publicity"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|
