@@ -14,26 +14,26 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-05-08T19:09:32-07:00">2013-05-08T19:09:32-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-05-14T19:55:32-07:00">2013-05-14T19:55:32-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">58.82%</span></span>
+    (<span class="covered_percent"><span class="red">61.11%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.9
+         0.93
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>4</b> files in total.
-    <b>17</b> relevant lines. 
-    <span class="green"><b>10</b> lines covered</span> and
+    <b>18</b> relevant lines. 
+    <span class="green"><b>11</b> lines covered</span> and
     <span class="red"><b>7</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -62,12 +62,12 @@
       
       <tr>
         <td class="strong"><a href="#0957590643fb3bf15015e2122ef65bfc3198dcc1" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
-        <td class="red strong">36.36 %</td>
-        <td>19</td>
-        <td>11</td>
-        <td>4</td>
+        <td class="red strong">41.67 %</td>
+        <td>23</td>
+        <td>12</td>
+        <td>5</td>
         <td>7</td>
-        <td>0.6</td>
+        <td>0.7</td>
       </tr>
       
       <tr>
@@ -83,7 +83,7 @@
       <tr>
         <td class="strong"><a href="#2006aafb09004302f859814fef9cda1efd6bcccf" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>11</td>
+        <td>14</td>
         <td>3</td>
         <td>3</td>
         <td>0</td>
@@ -99,19 +99,19 @@
           <div class="file_list_container" id="Controllers">
   <h2>
     <span class="group_name">Controllers</span>
-    (<span class="covered_percent"><span class="red">46.15%</span></span>
+    (<span class="covered_percent"><span class="red">50.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.8
+         0.85
        </span>
     </span> hits/line)
   </h2>
   <a name="Controllers"></a>
   <div>
     <b>2</b> files in total.
-    <b>13</b> relevant lines. 
-    <span class="green"><b>6</b> lines covered</span> and
+    <b>14</b> relevant lines. 
+    <span class="green"><b>7</b> lines covered</span> and
     <span class="red"><b>7</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -140,12 +140,12 @@
       
       <tr>
         <td class="strong"><a href="#0957590643fb3bf15015e2122ef65bfc3198dcc1" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
-        <td class="red strong">36.36 %</td>
-        <td>19</td>
-        <td>11</td>
-        <td>4</td>
+        <td class="red strong">41.67 %</td>
+        <td>23</td>
+        <td>12</td>
+        <td>5</td>
         <td>7</td>
-        <td>0.6</td>
+        <td>0.7</td>
       </tr>
       
     </tbody>
@@ -188,7 +188,7 @@
       <tr>
         <td class="strong"><a href="#2006aafb09004302f859814fef9cda1efd6bcccf" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>11</td>
+        <td>14</td>
         <td>3</td>
         <td>3</td>
         <td>0</td>
@@ -407,10 +407,10 @@
         <div class="source_table" id="0957590643fb3bf15015e2122ef65bfc3198dcc1">
   <div class="header">
     <h3>app/controllers/users_controller.rb</h3>
-    <h4><span class="red">36.36 %</span> covered</h4>
+    <h4><span class="red">41.67 %</span> covered</h4>
     <div>
-      <b>11</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>12</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>7</b> lines missed.</span>
     </div>
   </div>
@@ -457,76 +457,100 @@
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">  def create</code>
+          <code class="ruby">  def show</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
-          
-          <code class="ruby">    @user = User.new(params[:user])</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="9">
-          
-          
-          <code class="ruby">    @user.user = current_user</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="10">
-          
-          
-          <code class="ruby">    if @user.save</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="11">
-          
-          
-          <code class="ruby">      flash[:notice] = 'User has been created.'</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="12">
-          
-          
-          <code class="ruby">      redirect_to @user</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby">    else</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="14">
-          
-          
-          <code class="ruby">      flash[:alert] = 'User has not been created.'</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="15">
-          
-          
-          <code class="ruby">      render :action =&gt; 'new'</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">    @user = User.new(params[:user])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">    @user.user = current_user</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">    if @user.save</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
+          
+          <code class="ruby">      flash[:notice] = 'User has been created.'</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
+          
+          <code class="ruby">      redirect_to @user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">      flash[:alert] = 'User has not been created.'</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="19">
+          
+          
+          <code class="ruby">      render :action =&gt; 'new'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby">end</code>
@@ -641,6 +665,24 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">end</code>

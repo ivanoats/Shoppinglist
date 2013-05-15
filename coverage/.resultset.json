@@ -26,6 +26,9 @@
         null,
         1,
         null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/uw/rails_class/final_project/Shoppinglist/app/controllers/application_controller.rb": [
@@ -45,6 +48,10 @@
         null,
         null,
         1,
+        null,
+        null,
+        null,
+        1,
         0,
         0,
         0,
@@ -59,6 +66,6 @@
         null
       ]
     },
-    "timestamp": 1368065372
+    "timestamp": 1368586530
   }
 }
