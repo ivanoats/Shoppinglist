@@ -1,0 +1,10 @@
+<H2><%=  @item.name %></H2>
+<p></p>
+<%= @item.note %>
+<p></p>
+<%= @item.tag %>
+<p></p>
+<%= @item.image %>
+
+<%= link_to "Back to list", list_path(@item.list_id) %>
+

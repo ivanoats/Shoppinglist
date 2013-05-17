@@ -1,0 +1,25 @@
+<%= form_for [@list, @item] do |f| %>
+    <p>
+      <%=	 f.label :name %><br />
+      <%=	 f.text_field :name %>
+    </p>
+
+    <p>
+      <%=	 f.label :note %><br />
+      <%=	 f.text_field :note %>
+    </p>
+
+    <p>
+      <%=	 f.label :tag %><br />
+      <%=	 f.text_field :tag %>
+    </p>
+
+    <p>
+      <%=	 f.label :image %><br />
+      <%=	 f.text_field :image %>
+    </p>
+
+
+    </p>
+    <%=	 f.submit %>
+<%	 end %>
