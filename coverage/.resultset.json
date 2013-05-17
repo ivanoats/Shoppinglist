@@ -58,14 +58,14 @@
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
         null,
         0,
         0,
@@ -73,11 +73,11 @@
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
-        0,
+        3,
         null,
         null,
         null
@@ -91,7 +91,7 @@
       "/Users/uw/rails_class/final_project/Shoppinglist/app/controllers/lists_controller.rb": [
         1,
         1,
-        4,
+        5,
         null,
         null,
         1,
@@ -109,7 +109,7 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         null
@@ -147,6 +147,6 @@
         null
       ]
     },
-    "timestamp": 1368816602
+    "timestamp": 1368819437
   }
 }
