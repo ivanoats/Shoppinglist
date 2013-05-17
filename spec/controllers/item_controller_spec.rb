@@ -1,5 +1,5 @@
 require 'spec_helper'
 
-describe ItemController do
+describe ItemsController do
 
 end

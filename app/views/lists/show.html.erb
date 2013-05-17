@@ -1,6 +1,6 @@
 <h2><%=@list.name%></h2>
 <% @list.items.each do |item| %>
-   <p><%= item.name %></p>
+   <p><%= link_to item.name, [@list, item] %></p>
 <% end %>
 
 <%= link_to "Add item", new_list_item_path(@list) %>
