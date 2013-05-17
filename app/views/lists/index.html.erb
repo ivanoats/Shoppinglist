@@ -1,6 +1,6 @@
 <%= link_to 'New List ', new_list_path %>
 
 <p><% @lists.each do |list| %>
-    <p> <%= list.name %> </p>
+    <p> <%= link_to list.name, list %> </p>
 <% end %>
 </p>
