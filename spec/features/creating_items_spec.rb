@@ -6,7 +6,7 @@ feature 'Creating items' do
     visit '/'
     click_link 'Grocery'
   end
-  scenario 'Can create a list' do
+  scenario 'Can create an item' do
 
     click_link 'Add item'
     fill_in 'Name', with: 'Cap n Crunch'
@@ -16,5 +16,7 @@ feature 'Creating items' do
     click_button 'Create Item'
     page.should have_content('item has been created')
   end
+
+
 
 end
