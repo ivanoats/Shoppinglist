@@ -4,7 +4,7 @@ Shoppinglist::Application.routes.draw do
 
   root to: 'lists#index'
   resources :lists do
-    resources :item
+    resources :items
   end
 
   # The priority is based upon order of creation:
