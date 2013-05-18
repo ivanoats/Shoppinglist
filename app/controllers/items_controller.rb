@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   before_filter :find_list
-  #before_filter :find_item, :only => [:show, :edit, :update, :destroy]
+  before_filter :find_item, :only => [:show, :edit, :update, :destroy]
 
   def index
     @items = Item.all
@@ -22,11 +22,35 @@ class ItemsController < ApplicationController
   end
 
   def show
-    @item = Item.find(params[:id])
+
+  end
+
+  def edit
+
+  end
+
+  def update
+      if @item.update_attributes(params[:item])
+        flash[:notice] = 'Item has been updated.'
+        redirect_to [@list, @item]
+      else
+        flash[:alert] = 'Item has not been updated.'
+        render :action => 'edit'
+      end
+  end
+
+  def destroy
+    @item.destroy
+    flash[:notice] = 'Item has been deleted.'
+    redirect_to @list
   end
 
   def find_list
     @list = List.find(params[:list_id])
+  end
+
+  def find_item
+    @item = Item.find(params[:id])
   end
 
 end

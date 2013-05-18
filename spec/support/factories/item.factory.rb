@@ -4,6 +4,6 @@ FactoryGirl.define do
     name "Cap'n Crunch"
     note 'big box'
     tag 'yummy'
-    association :list, :factory => :item
+    #association :list, :factory => :item
   end
 end
