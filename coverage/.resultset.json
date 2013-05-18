@@ -40,11 +40,39 @@
         1,
         null
       ],
+      "/Users/uw/rails_class/final_project/Shoppinglist/app/helpers/item_helper.rb": [
+        1,
+        null
+      ],
       "/Users/uw/rails_class/final_project/Shoppinglist/app/helpers/items_helper.rb": [
         1,
         null
       ],
       "/Users/uw/rails_class/final_project/Shoppinglist/app/helpers/lists_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/uw/rails_class/final_project/Shoppinglist/app/controllers/item_controller.rb": [
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/uw/rails_class/final_project/Shoppinglist/app/models/item.rb": [
+        1,
+        1,
         1,
         null
       ],
@@ -58,14 +86,14 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
-        1,
-        1,
-        1,
-        1,
+        2,
+        2,
+        2,
+        2,
         null,
         0,
         0,
@@ -73,36 +101,30 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
-        3,
+        6,
         null,
         null,
-        null
-      ],
-      "/Users/uw/rails_class/final_project/Shoppinglist/app/models/item.rb": [
-        1,
-        1,
-        1,
         null
       ],
       "/Users/uw/rails_class/final_project/Shoppinglist/app/controllers/lists_controller.rb": [
         1,
         1,
-        5,
+        2,
         null,
         null,
         1,
-        1,
+        0,
         null,
         null,
         1,
-        1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
+        0,
         null,
         null,
         null,
@@ -147,6 +169,6 @@
         null
       ]
     },
-    "timestamp": 1368819437
+    "timestamp": 1368851135
   }
 }
