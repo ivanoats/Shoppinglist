@@ -1,0 +1,6 @@
+<H2> Edit List Settings</H2>
+  <%= render 'form' %>
+
+<%= link_to "Delete this list", list_path(@list),
+            :method => :delete,
+            :confirm => 'Are you sure you want to delete this list?' %>

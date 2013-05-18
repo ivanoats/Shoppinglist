@@ -1,0 +1,28 @@
+<%= form_for(@list) do |f| %>
+    <p>
+      <%=	 f.label :name %><br />
+      <%=	 f.text_field :name %>
+    </p>
+
+    <p>
+      <%=	 f.label :category %><br />
+      <%=	 f.text_field :category %>
+    </p>
+
+
+
+    <p>
+      <%=	 f.label :status  %>
+      <%=	 f.radio_button 'status', 'Yes', checked: true, id:'Active'%>Active
+      <%=	 f.radio_button 'status', 'No', checked: false, id: 'Inactive' %>Inactive
+
+    </p>
+
+    <p>
+      <%=	 f.label :publicity, "Make Public?" %>
+      <%=	 f.radio_button 'publicity',true, checked: true, id: 'Yes' %>Yes
+      <%=	 f.radio_button 'publicity',false, checked: false, id: 'No' %>No
+
+    </p>
+<%=	 f.submit %>
+<%	 end %>

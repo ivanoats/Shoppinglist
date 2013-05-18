@@ -2,8 +2,10 @@ require 'spec_helper'
 
 feature 'CRUD Lists' do
   before(:each) do
+    Factory(:list, :name => 'Grocery')
     visit '/'
   end
+
   scenario 'Can create a list' do
     click_link 'New List'
     fill_in 'Name', with: 'Test List One'
@@ -16,25 +18,24 @@ feature 'CRUD Lists' do
 
   #Updating the list by adding or removing items is handled at the item level
 
+
   scenario 'Can update list attributes' do
-    Factory(:list, :name => 'Test List One')
-    click_link 'Test List One'
-    click_link 'Test List One'
+    click_link 'Grocery'
+    click_link 'Grocery'
     page.should have_content('Edit List Settings')
-    fill_inn 'Category', with: 'New Test Category'
+    fill_in 'Category', with: 'New Test Category'
     choose 'No'
     click_button 'Update List'
-    page.should have_content('List Settings Updated')
-    page.should have_content('New Test Category')
+    page.should have_content('List has been updated')
+    page.should have_content('Grocery')
   end
 
   scenario 'Can delete a list' do
-    Factory(:list, :name => 'List to Delete')
-    click_link 'List to Delete'
-    click_link 'List to Delete'
+    click_link 'Grocery'
+    click_link 'Grocery'
     click_link 'Delete this list'
     page.should have_link('New List')
-    page.should_not have_content('List to Delete')
+    page.should_not have_content('Grocery')
   end
 
 end
