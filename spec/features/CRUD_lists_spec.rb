@@ -29,7 +29,7 @@ feature 'CRUD Lists' do
     page.should have_content('List has been updated')
     page.should have_content('Grocery')
     click_link 'Grocery'
-    page.has_checked_field?(id = 'No').should == false #that sounds backward but webkit browsers do it that way.
+    page.has_checked_field?(id = 'No').should == true
   end
 
   scenario 'Can delete a list' do
