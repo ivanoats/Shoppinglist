@@ -12,14 +12,14 @@
     <p>
       <%=	 f.label :status  %>
       <%=	 f.radio_button 'status', 'Yes', checked: true, id:'Active'%>Active
-      <%=	 f.radio_button 'status', 'No', checked: false, id: 'Inactive' %>Inactive
+      <%=	 f.radio_button 'status', 'No', id: 'Inactive' %>Inactive
 
     </p>
 
     <p>
       <%=	 f.label :publicity, "Make Public?" %>
-      <%=	 f.radio_button :publicity, checked: true, :checked => true %>Yes
-      <%=	 f.radio_button :publicity, checked: false %>No
+      <%=	 f.radio_button('publicity', 'true', checked: true) %>Yes
+      <%=	 f.radio_button('publicity', 'false') %>No
 
     </p>
 <%=	 f.submit %>
