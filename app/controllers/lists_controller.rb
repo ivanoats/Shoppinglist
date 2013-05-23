@@ -15,7 +15,8 @@ class ListsController < ApplicationController
       flash[:notice] = 'List has been created!'
       redirect_to @list
     else
-
+      flash[:alert] = "List has not been created.#{@list.errors[:name]}"
+      render :action => 'new'
     end
   end
 
