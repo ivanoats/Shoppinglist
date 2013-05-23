@@ -1,4 +1,7 @@
-<h2><%= link_to @list.name, edit_list_path(@list) %></h2>
+<div class="span3">
+  <h2><%= link_to @list.name, edit_list_path(@list) %></h2>
+</div>
+
 <% @list.items.each do |item| %>
    <p><%= link_to item.name, [@list, item] %></p>
 <% end %>

@@ -34,7 +34,7 @@ class ItemsController < ApplicationController
         flash[:notice] = 'Item has been updated.'
         redirect_to [@list, @item]
       else
-        flash[:alert] = 'Item has not been updated.'
+        flash[:error] = 'Item has not been updated.'
         render :action => 'edit'
       end
   end
