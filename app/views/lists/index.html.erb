@@ -1,7 +1,8 @@
-
-<div class="span3">
-  <h4><%= current_user.email %>'s Lists</h4>
-</div>
+<% if user_signed_in? %>
+    <div class="span3">
+      <h4><%= current_user.email %>'s Lists</h4>
+    </div>
+<% end%>
 <p><% @lists.each do |list| %>
     <p> <%= link_to list.name, list %> </p>
 <% end %>

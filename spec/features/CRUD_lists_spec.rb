@@ -7,7 +7,7 @@ feature 'CRUD Lists' do
   end
 
   scenario 'Can create a list' do
-    click_link 'New List'
+    find('.nav').click_link 'New List'
     fill_in 'Name', with: 'Test List One'
     fill_in 'Category', with: 'Test Category'
     choose 'Active'
