@@ -22,7 +22,7 @@ end
 
 gem 'therubyracer'
 gem 'jquery-rails'
-gem 'twitter_bootstrap_rails'
+gem 'bootstrap-sass'
 group :test do
   gem 'email_spec', '1.2.1'
 end
