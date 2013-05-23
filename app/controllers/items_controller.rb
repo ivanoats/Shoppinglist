@@ -16,7 +16,7 @@ class ItemsController < ApplicationController
       flash[:notice] = 'item has been created.'
       redirect_to [@list, @item]
     else
-      flash[:alert] = 'Item has not been created.'
+      flash[:alert] = "Item has not been created. NAME #{(@item.errors[:name][0]).upcase}"
       render :action => 'new'
     end
   end
