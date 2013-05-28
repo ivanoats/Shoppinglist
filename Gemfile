@@ -31,7 +31,7 @@ group :test, :development do
   gem 'capybara'
   gem 'factory_girl', '2.6.4'
   gem 'simplecov', :require => false
-  #gem 'better_errors'
+  gem 'better_errors'
   gem 'binding_of_caller'
 end
 
