@@ -1,5 +1,5 @@
 class ListsController < ApplicationController
-  before_filter :find_list, :only => [:edit, :update, :show, :destroy]
+  before_action :set_list, :only => [:edit, :update, :show, :destroy]
 
   def index
     @lists = List.all
@@ -10,7 +10,7 @@ class ListsController < ApplicationController
   end
 
   def create
-    @list = List.new(params[:list])
+    @list = List.new(list_params)
     if @list.save
       flash[:notice] = 'List has been created!'
       redirect_to @list
@@ -25,7 +25,7 @@ class ListsController < ApplicationController
   end
 
   def update
-    if @list.update_attributes(params[:list])
+    if @list.update_attributes(list_params)
       flash[:notice] = 'List has been updated.'
       redirect_to @list
     else
@@ -44,8 +44,13 @@ class ListsController < ApplicationController
     redirect_to lists_path
   end
 
-  def find_list
+  def set_list
     @list = List.find(params[:id])
+  end
+
+  private
+  def list_params
+    params.require(:list).permit(:category, :name, :publicity, :status)
   end
 
 end

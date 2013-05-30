@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
-  before_filter :find_list
-  before_filter :find_item, :only => [:show, :edit, :update, :destroy]
+  before_filter :set_list
+  before_filter :set_item, :only => [:show, :edit, :update, :destroy]
 
   def index
     @items = Item.all
@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
   end
 
   def create
-    @item = @list.items.build(params[:item])
+    @item = @list.items.build(item_params)
     if @item.save
       flash[:notice] = 'item has been created.'
       redirect_to [@list, @item]
@@ -30,7 +30,7 @@ class ItemsController < ApplicationController
   end
 
   def update
-      if @item.update_attributes(params[:item])
+      if @item.update_attributes(item_params)
         flash[:notice] = 'Item has been updated.'
         redirect_to [@list, @item]
       else
@@ -45,12 +45,19 @@ class ItemsController < ApplicationController
     redirect_to @list
   end
 
-  def find_list
+  private
+
+  def set_list
     @list = List.find(params[:list_id])
   end
 
-  def find_item
+  def set_item
     @item = Item.find(params[:id])
+  end
+
+
+  def item_params
+    params.require(:item).permit(:image, :name, :note, :tag)
   end
 
 end

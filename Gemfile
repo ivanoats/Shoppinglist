@@ -22,7 +22,7 @@ end
 
 gem 'therubyracer'
 gem 'jquery-rails'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~>2.3.1.0'
 group :test do
   gem 'email_spec', '1.2.1'
 end
@@ -36,8 +36,11 @@ group :test, :development do
 end
 
 gem 'devise', '3.0.0.rc'
-gem 'protected_attributes'
+
 gem 'thin'
+
+gem 'the_role', '~> 2.0.0'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
