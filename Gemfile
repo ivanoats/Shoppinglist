@@ -35,7 +35,7 @@ group :test, :development do
   gem 'binding_of_caller'
 end
 
-gem 'devise', '2.1.0'
+gem 'devise', '3.5.10'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
